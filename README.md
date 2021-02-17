@@ -1,46 +1,26 @@
 ![](https://opendata.swiss/content/uploads/2016/02/kt_zh.png)
 
-# Projekt Name
+# RSTAT@KTZH
 
-*Read this in other languages: [English](README_EN.md)*
+Der R-Austausch richtet sich an R Nutzerinnen in der Kantonsverwaltung. Er dient als Plattform für den Wissensaustausch und der Vernetzung rund um die offene Statistiksoftware R. 
 
-## Projektbeschreibung
+## Nächster Austausch am 22.3.2021 (13:30)
 
-Beschreibe hier das Projekt: Einführung, Methodik, Ergebnisse, empfohlene Zitierform etc. <br>
-Bedenke, dass github der Ort ist, an dem wir Code austauschen. Dies ist also der Ort, an dem interessierte Personen nach Anweisungen suchen. Interessierte möchen hier z.B: informationen zu folgenden Themen finden: Wie die Analyse durchgeführt wurde? Was muss beim Ausführen des Codes beachtet werden? Was bedeuten die Variablennamen? Ein schönes Beispiel ist hier zu finden: https://github.com/tamedia-ddj/SUV_Analyse_Schweiz
+Am X findet der nächste R Austausch statt. Er dient als Plattform für den Wissensaustausch rund um R um die ... 
 
-## Voraussetzungen
+1. Template für PDF-Berichte der BISTA (Flavian Imlig)
+2. R-Server (Thomas Knecht)
 
-z.B.: 
+    kurze Präsentation des neuen Setups des STAT Amtes
+    Umfrage : wie sieht die R-Infrastruktur bei den Teilnehmenden aus?
 
-R version 3.5.0 (2018-04-23) <br>
-RStudio version 1.1.453 <br>
-Deppendencies: <br>
-|package name | version number |
-| ------------- | ------------- | 
-|dplyr     |    0.8.3 |
-|sf     |    0.8-1 |
+3. Interaktiver Austausch zu Machine Learning / AI 
 
+    Kurzinputs zu bestehenden Anwendungen / Erfahrungen von Christian Ruiz & Thomas Lo Russo
+    Umfrage / Diskussion zu laufende Projekte und potentiellen Anwendungsfälle
+    
+Weitere Infos und der Konferenzlink folgen in Kürze.
 
-R Code um die obigen Informationen zu erhalten: 
-
-```R 
-# R version
-print(version[['version.string']])
-# R Studio Version
-require(rstudioapi)
-RStudioversionInfo <- versionInfo()
-print(paste("RStudio version", RStudioversionInfo$version))
-# list names of loaded libraries with version number
-print(subset(data.frame(sessioninfo::package_info()), attached==TRUE, c(package, loadedversion)),  row.names = FALSE)
-```
-
-## Mitwirkende
-
-Vielen Dank an folgende Personen die mitgewirkt haben: 
-
-[@kalakaru](https://github.com/kalakaru)
-[@mmznrSTAT](https://github.com/mmznrSTAT)
 
 ## Kontakt
 
