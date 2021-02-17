@@ -1,6 +1,6 @@
 ![](https://opendata.swiss/content/uploads/2016/02/kt_zh.png)
 
-# RSTAT@KTZH
+# RSTATS@KTZH
 
 Der R-Austausch richtet sich an R Nutzerinnen in der Kantonsverwaltung. Er dient als Plattform für den Wissensaustausch und der Vernetzung rund um die offene Statistiksoftware R. 
 
