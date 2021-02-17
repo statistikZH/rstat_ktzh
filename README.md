@@ -17,8 +17,8 @@ Im März findet der nächste R Austausch statt.
 
 ### 3. Interaktiver Austausch zu Machine Learning / AI 
 
-    Kurzinputs zu bestehenden Anwendungen / Erfahrungen von Christian Ruiz & Thomas Lo Russo
-    Umfrage / Diskussion zu laufende Projekte und potentiellen Anwendungsfälle
+- Kurzinputs zu bestehenden Anwendungen / Erfahrungen von Christian Ruiz & Thomas Lo Russo
+- Umfrage / Diskussion zu laufende Projekte und potentiellen Anwendungsfälle
     
 Weitere Infos und der Konferenzlink folgen in Kürze.
 
