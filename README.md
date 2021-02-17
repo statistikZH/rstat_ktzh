@@ -6,7 +6,9 @@ Der R-Austausch richtet sich an R Nutzerinnen in der Kantonsverwaltung. Er dient
 
 ## Nächster Austausch am 22.3.2021 (13:30)
 
-Am X findet der nächste R Austausch statt. Er dient als Plattform für den Wissensaustausch rund um R um die ... 
+Im März findet der nächste R Austausch statt. 
+
+## Programm
 
 1. Template für PDF-Berichte der BISTA (Flavian Imlig)
 2. R-Server (Thomas Knecht)
@@ -21,12 +23,10 @@ Am X findet der nächste R Austausch statt. Er dient als Plattform für den Wiss
     
 Weitere Infos und der Konferenzlink folgen in Kürze.
 
-
 ## Kontakt
 
-Vorname Nachname  <br>
-vorname.nachname@statistik.ji.zh.ch <br>
-Telefonnummer <br>
+Andrea Schnell  <br>
+andrea.schnell@statistik.ji.zh.ch <br>
 
 ![Twitter Follow](https://img.shields.io/twitter/follow/statistik_zh?style=social)
 
