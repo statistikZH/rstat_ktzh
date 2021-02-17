@@ -10,13 +10,12 @@ Im März findet der nächste R Austausch statt.
 
 ## Programm
 
->1. Template für PDF-Berichte der BISTA (Flavian Imlig)
->2. R-Server (Thomas Knecht)
+1. Template für PDF-Berichte der BISTA (Flavian Imlig)
+2. R-Server (Thomas Knecht)
+ - Präsentation des neuen R-Server Setups des Statistischen Amtes
+ - Umfrage : wie sieht die R-Infrastruktur bei den Teilnehmenden aus?
 
->    kurze Präsentation des neuen Setups des STAT Amtes
->    Umfrage : wie sieht die R-Infrastruktur bei den Teilnehmenden aus?
-
->3. Interaktiver Austausch zu Machine Learning / AI 
+3. Interaktiver Austausch zu Machine Learning / AI 
 
     Kurzinputs zu bestehenden Anwendungen / Erfahrungen von Christian Ruiz & Thomas Lo Russo
     Umfrage / Diskussion zu laufende Projekte und potentiellen Anwendungsfälle
