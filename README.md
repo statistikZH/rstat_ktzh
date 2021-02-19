@@ -20,7 +20,7 @@ Am 22.3.2021 (13:30) findet der nächste R Austausch statt.
 - Kurzinputs zu bestehenden Anwendungen / Erfahrungen von Christian Ruiz & Thomas Lo Russo
 - Umfrage / Diskussion zu laufenden Projekte und potentiellen Anwendungsfällen
     
-Weitere Infos und der Konferenzlink folgen in Kürze.
+https://afi-zh.webex.com/afi-zh/j.php?MTID=m25a26916872f4f85bb787d899270f7d0
 
 ## Kontakt
 
