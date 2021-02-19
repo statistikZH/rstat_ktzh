@@ -2,23 +2,23 @@
 
 # RSTATS@KTZH
 
-Der R-Austausch richtet sich an R Nutzerinnen in der Kantonsverwaltung. Er dient als Plattform für den Wissensaustausch und der Vernetzung rund um die offene Statistiksoftware R. 
+Der R-Austausch richtet sich an R Nutzer*innen in der Zürcher Kantonsverwaltung. Er dient als Plattform für den Wissensaustausch und der Vernetzung rund um die offene Statistiksoftware R. 
 
-## Nächster Austausch am 22.3.2021 (13:30)
+## Nächster Termin
 
-Im März findet der nächste R Austausch statt. 
+Am 22.3.2021 (13:30) findet der nächste R Austausch statt. 
 
 ## Programm
 
 ### 1. Template für PDF-Berichte der BISTA (Flavian Imlig)
-### 2. neues R-Studio Server Setups des Statistischen Amtes (Thomas Knecht)
- - Präsentation des neuen Setups des Statistischen Amtes
+
+### 2. Neues RStudio Server Setup des Statistischen Amtes (Thomas Knecht)
+ - Vorstellen des neuen Setups des Statistischen Amtes
  - Umfrage : wie sieht die R-Infrastruktur bei den Teilnehmenden aus?
 
 ### 3. Interaktiver Austausch zu Machine Learning / AI 
-
 - Kurzinputs zu bestehenden Anwendungen / Erfahrungen von Christian Ruiz & Thomas Lo Russo
-- Umfrage / Diskussion zu laufenden Projekte und potentiellen Anwendungsfälle
+- Umfrage / Diskussion zu laufenden Projekte und potentiellen Anwendungsfällen
     
 Weitere Infos und der Konferenzlink folgen in Kürze.
 
