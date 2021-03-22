@@ -17,10 +17,13 @@ Am 22.3.2021 (13:30) findet der nächste R Austausch statt.
  - Vorstellen des neuen Setups des Statistischen Amtes
  - Umfrage : wie sieht die R-Infrastruktur bei den Teilnehmenden aus?
 
-### 3. Interaktiver Austausch zu Machine Learning / AI 
-- Kurzinputs zu bestehenden Anwendungen / Erfahrungen von Christian Ruiz & Thomas Lo Russo [Slides](https://tlorusso.github.io/talks/plausiapp_032021/)
-- Umfrage / Diskussion zu laufenden Projekte und potentiellen Anwendungsfällen
-    
+### 3. Machine Learning / AI 
+Kurzinputs zu bestehenden Anwendungen / Erfahrungen
+- Christian Ruiz (Plausi+)
+- Thomas Lo Russo, PlausiApp [Slides](https://tlorusso.github.io/talks/plausiapp_032021/)
+
+**Meeting-Link**
+
 https://afi-zh.webex.com/afi-zh/j.php?MTID=m25a26916872f4f85bb787d899270f7d0
 
 ## Kontakt
