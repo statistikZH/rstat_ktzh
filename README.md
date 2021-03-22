@@ -20,7 +20,7 @@ Am 22.3.2021 (13:30) findet der nächste R Austausch statt.
 ### 3. Machine Learning / AI 
 Kurzinputs zu bestehenden Anwendungen / Erfahrungen
 - Christian Ruiz (Plausi+)
-- Thomas Lo Russo (PlausiApp)[Slides](https://tlorusso.github.io/talks/plausiapp_032021/)
+- Thomas Lo Russo (PlausiApp) [Slides](https://tlorusso.github.io/talks/plausiapp_032021/)
 
 **Meeting-Link**
 
