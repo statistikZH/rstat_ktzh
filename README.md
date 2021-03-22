@@ -11,6 +11,7 @@ Am 22.3.2021 (13:30) findet der nächste R Austausch statt.
 ## Programm
 
 ### 1. Template für PDF-Berichte der BISTA (Flavian Imlig)
+[Slides](https://github.com/statistikZH/rstats_ktzh/blob/master/slides_20210322/biplaRartcl_slides.pdf) 
 
 ### 2. Neues RStudio Server Setup des Statistischen Amtes (Thomas Knecht)
  - Vorstellen des neuen Setups des Statistischen Amtes
