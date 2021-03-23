@@ -12,8 +12,7 @@ Der R-Austausch richtet sich an R Nutzer*innen in der Zürcher Kantonsverwaltung
 [Slides](https://github.com/statistikZH/rstats_ktzh/blob/master/slides_20210322/biplaRartcl_slides.pdf) 
 
 ### 2. Neues RStudio Server Setup des Statistischen Amtes (Thomas Knecht)
- - Vorstellen des neuen Setups des Statistischen Amtes
- - Umfrage : wie sieht die R-Infrastruktur bei den Teilnehmenden aus?
+ - Vorstellen des neuen Setups des Statistischen Amtes: [Slides](https://github.com/statistikZH/rstats_ktzh/blob/master/slides_20210322/RStudio-Server-Setup.pdf)
 
 ### 3. Machine Learning / AI 
 Kurzinputs zu bestehenden Anwendungen / Erfahrungen
