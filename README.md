@@ -11,6 +11,8 @@ Der R-Austausch richtet sich an R Nutzer*innen in der Zürcher Kantonsverwaltung
 ### statR Package des Statistischen Amts, Michelle Donzallaz & Thomas Lo Russo, Statistisches Amt
 Update und Weiterentwicklung der Corporate Design Toolbox für R-Nutzende in der Kantonsverwaltung. Das statR Package umfasst einige Funktionen, die erlauben rasch schöne Grafiken und xlsx-Dateien im CD des Kantons Zürich zu erstellen. Dazu gehört auch eine Farbpalette.
 
+### R-Kurse für Mitarbeitende der Kantonsverwaltung, Lars Schöbitz
+
 ## Unterlagen vom letzten Austausch, 22.03.2021
 
 [Ergebnisse Mentimeter-Umfrage](https://github.com/statistikZH/rstats_ktzh/blob/master/slides_20210322/Mentimeter_R-Austausch.pdf)
