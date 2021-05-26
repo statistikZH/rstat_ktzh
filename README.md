@@ -14,10 +14,11 @@ Update und Weiterentwicklung der Corporate Design Toolbox für R-Nutzende in der
 
 https://statistikzh.github.io/statR/
 
-### R-Kurse für Mitarbeitende der Kantonsverwaltung, Lars Schöbitz
+### «rstatsZH – Data Science mit R», Kursangebot für Mitarbeiter_innen der Kantonsverwaltung, [Lars Schöbitz](https://www.lse.de/)
 
-Einblick in den Kursinhalt und das Kursmanagement von "rstatsZH - Data Science mit R". Das Kursangebot besteht seit Januar 2021 und wird sowohl für Mitarbeiter_innen der kantonalen Verwaltung als auch für externe Teilnehmer_innen angeboten. Kurswerkzeuge umfassen das Arbeiten mit R/RStudio in der RStudio Cloud, R Tidverse Packages, R Markdown, Git und GitHub. 
+Einblick in den Kursinhalt und das Kursmanagement von "rstatsZH - Data Science mit R". Das Kursangebot besteht seit Januar 2021 und wird sowohl für Mitarbeiter_innen der kantonalen Verwaltung als auch für externe Teilnehmer_innen angeboten. Kurswerkzeuge umfassen das Arbeiten mit R/RStudio in der RStudio Cloud, R Tidverse Packages, R Markdown, Git und GitHub. Jegliche Kursmaterialien (Folien, Übungen) werden unter einer open source Lizenz auf GitHub publiziert.
 
+Kurswebsite: https://rstatszh.github.io/website/
 
 
 ## Unterlagen vom letzten Austausch, 22.03.2021
