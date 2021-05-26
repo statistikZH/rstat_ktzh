@@ -9,7 +9,10 @@ Der R-Austausch richtet sich an R Nutzer*innen in der Zürcher Kantonsverwaltung
 ### Corona-Auswertungen mit R in der GD, Damian Brunold, GD Datenanalyse
 
 ### statR Package des Statistischen Amts, Michelle Donzallaz & Thomas Lo Russo, Statistisches Amt
-Update und Weiterentwicklung der Corporate Design Toolbox für R-Nutzende in der Kantonsverwaltung. Das statR Package umfasst einige Funktionen, die erlauben rasch schöne Grafiken und xlsx-Dateien im CD des Kantons Zürich zu erstellen. Dazu gehört auch eine Farbpalette.
+
+Update und Weiterentwicklung der Corporate Design Toolbox für R-Nutzende in der Kantonsverwaltung. Das statR Package umfasst einige Funktionen, die erlauben rasch schöne Grafiken und xlsx-Dateien im CD des Kantons Zürich zu erstellen. Dazu gehört auch eine Farbpalette und neu auch ein Template für html-Seiten.
+
+https://statistikzh.github.io/statR/
 
 ### R-Kurse für Mitarbeitende der Kantonsverwaltung, Lars Schöbitz
 
