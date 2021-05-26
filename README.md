@@ -16,6 +16,10 @@ https://statistikzh.github.io/statR/
 
 ### R-Kurse für Mitarbeitende der Kantonsverwaltung, Lars Schöbitz
 
+Einblick in den Kursinhalt und das Kursmanagement von "rstatsZH - Data Science mit R". Das Kursangebot besteht seit Januar 2021 und wird sowohl für Mitarbeiter_innen der kantonalen Verwaltung als auch für externe Teilnehmer_innen angeboten. Kurswerkzeuge umfassen das Arbeiten mit R/RStudio in der RStudio Cloud, R Tidverse Packages, R Markdown, Git und GitHub. 
+
+
+
 ## Unterlagen vom letzten Austausch, 22.03.2021
 
 [Ergebnisse Mentimeter-Umfrage](https://github.com/statistikZH/rstats_ktzh/blob/master/slides_20210322/Mentimeter_R-Austausch.pdf)
