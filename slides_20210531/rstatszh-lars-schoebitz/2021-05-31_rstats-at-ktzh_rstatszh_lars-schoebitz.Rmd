@@ -87,6 +87,9 @@ xaringanExtra::use_broadcast()
 
 class: title-slide
 
+<script async defer data-domain="lse.de" src="https://plausible.io/js/plausible.js"></script>
+
+
 # `r rmarkdown::metadata$title`
 
 ## `r rmarkdown::metadata$subtitle`
@@ -96,12 +99,15 @@ class: title-slide
 ```{r, echo=FALSE}
 p(rmarkdown::metadata$author)
 p(rmarkdown::metadata$date)
-p("Slides: XXX")
+p("Slides: lse.de/slides/rstatszh")
 ```
 ]
 
 ???
-Welcome to this workshop on Data Science for WASH
+Hallo Zusammen
+
+Danke für die Möglichkeit, dass ich hier heute kurz über das R Kursangebot 
+präsentieren darf. 
 
 ---
 layout: true
@@ -118,31 +124,40 @@ background-image: url(img/lars_schoebitz_profile_photo.jpg)
 background-position: right
 background-size: contain
 
-# Wer bin ich?
+# Lars Schöbitz
 
-- Lars Schöbitz
-    - Umweltingenieur
-    - Toiletten-Forscher
-    - Datenwissenschaftler
-    - Kanton ZH - STAT - Data Shop Alumni
+
+- Umweltingenieur
+- Toiletten-Forscher
+- Data Scientist
+- Kanton ZH - STAT - Data Shop Alumni
 - R Nutzer seit 2016
-- R Trainer seit 2020
+- [RStudio zertifizierter Instructor](https://education.rstudio.com/trainers/) seit 2020
 - Website: [lse.de](https://www.lse.de?utm_source=Slides&utm_medium=rstatsZH)
 - Twitter: [@larnsce](https://twitter.com/larnsce)
 
 ???
-Kurz zu mir: Mein Name ist Lars Schöbitz. Ich freue mich wenn ihr mich Lars nennt und hoffe es geht okay, dass ich euch Dutze.
 
-Ich habe mal Umwelt- Hygiene und Sicherheitstechnik an einer Fachhochschule in Deutschland studiert und bin über Umwege im jahr 2012 in der Schweiz gelandet.
+.small[
+- Kurz zu mir: Mein Name ist Lars und ich bin seit fast 10 Jahren in der Schweiz.
 
-Hier habe ich dann 5 Jahre lang am Wasserforschungsinstitut Eawag gearbeitet und mich vor Allem mit der Sanitärversorgung im globalen Süden beschäftigt. Die Fäkalschlammbehandlung aus Toilettensystemen die nicht an die Kanalisation angeschlossen sind war mein Spezialgebiet.
+- Ich bin Diplom Umweltingenieur und bin in die Schweiz gekommen um in der Forschung 
+zu arbeiten
 
-Neuerdings darf ich mich auch Datenwissenschaftler nennen, da ich ein Praktikum als Data Scientist im statistischen Amt gemacht habe. 
+- 5 Jahre lang habe ich bei der Eawag in Dübendorf gearbeitet und mich vor Allem mit der Sanitärversorgung im globalen Süden beschäftigt
 
-Ich nutze R seit etwa vier Jahren. Mein Einstieg war ein 2-tägiger Workshop aber der Grossteil meiner Kompetenzen ist selbständig erworben. 
+- Ich gebe mir oft auch die Rolle des Data Scientist und bin Alumni des fantastischen 
+Praktikumsprogramm des Statistischen Amt
 
-Seit letztem Jahr  Monaten bin ich nun offiziel als R Trainer zertifiziert. Später noch etwas mehr dazu.
+- R nutze ich erst seit etwa fünf Jahren. Mein Einstieg war ein 2-tägiger Workshop aber der Grossteil meiner Kompetenzen ist selbständig erworben. 
 
+- Letztes Jahr wurde ich durch RStudio als Instructor zertifiziert und seit diesem Jahr versuche ich mein Geld damit zu verdienen anderen Data Science mit R näher zu bringen.
+] 
+
+---
+class: inverse, middle
+
+# .big[rstatsZH - Data Science mit R]
 
 ---
 class: left
@@ -156,16 +171,11 @@ background-size: contain
 
 ???
 
-- Welcome to Data Science with R
+- Ein neuartiger Kurs, welcher es sich zum Ziel setzt Analytiker in der Verwaltung mit modernen Werkzeugen für die Arbeit mit Daten auszustatten
 
-- Using open-source (free) tools, you will learn how to gather data, intrepret results, and clearly communicate findings.
+- Der Kurs wurde für Beginner konzipiert und Bedarf keinerlei Vorkenntnisse
 
-- You will learn how to make sense of different kinds of data, how to tell whether something is probably true or not. 
-
-- You will learn how to manage your data and a little bit of statistics and some basic programming skills, 
-
-- but more importantly, you will know how to apply all that to real-world problems in academia, business and society.
-
+- Ein Fokus wird auf Kollaboratives Arbeiten und das Kommunizieren von Datenprojekten gelegt, wesshalb wir von Beginn an Git und GitHub nutzen und im R Markdown Format schreiben
 
 ---
 class: inverse, middle
@@ -176,14 +186,14 @@ class: inverse, middle
 ---
 # Kursüberblick
 
-Über einen Zeitraum von 7 Wochen:
+Sieben Kurseinheiten über sieben Wochen
 
-- **Unterricht:** Wöchentlich 3 Stunden Session
-- **Übungen:** Übungen während der Session
-- **Hausaufgaben:** Einzureichen bis zum nächsten Kurstag
+- **Unterricht:** Wöchentlich 3 Stunden
+- **Übungen:** Übungen während der Kurseinheit 
+- **Hausaufgaben:** Einzureichen bis zum nächsten Kurstag 
 - **Persönliches Tutoring:** Sprechstunden ausserhalb der Kurstage
 - **Abschluss Projekt (freiwillig):** 
-    - Eigene Arbeitsamosphäre aufbauen
+    - Eigene Arbeitsatmosphäre aufbauen
     - Arbeit mit eigenen Daten 
     - Bericht erfassen
     - 5 Minuten Präsentation
@@ -262,6 +272,10 @@ background-size: contain
 
 ???
 
+- Angsteinflössend
+- Viele neue Konzepte die sich sehr fremd anfühlen
+- Mir geht es darum diesen Einstieg so sanft wie möglich zu machen
+
 ---
 background-image: url(img/rollercoaster-arrow.002.png)
 background-size: contain 
@@ -269,6 +283,9 @@ background-size: contain
 .footnote[Adapted from Artwork by [@allison_horst](https://twitter.com/allison_horst)]
 
 ???
+
+- Am Ende des Kurses hoffe ich die Teilnehmer_innen bis zu diesem Punkt zu bringen
+- Es ist der Punkt an dem die ersten Herausforderungen überwältigt wurden und man weiss wie man sich selbst weiterhelfen kann
 
 ---
 class: middle, inverse
