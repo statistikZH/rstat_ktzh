@@ -18,8 +18,9 @@ https://statistikzh.github.io/statR/
 
 Einblick in den Kursinhalt und das Kursmanagement von "rstatsZH - Data Science mit R". Das Kursangebot besteht seit Januar 2021 und wird sowohl für Mitarbeiter_innen der kantonalen Verwaltung als auch für externe Teilnehmer_innen angeboten. Kurswerkzeuge umfassen das Arbeiten mit R/RStudio in der RStudio Cloud, R Tidverse Packages, R Markdown, Git und GitHub. Jegliche Kursmaterialien (Folien, Übungen) werden unter einer open source Lizenz auf GitHub publiziert.
 
-Kurswebsite: https://rstatszh.github.io/website/
-
+- Folien: https://lse.de/slides/rstatszh/
+- Kurswebsite: https://rstatszh.github.io/website/
+- Kursmaterialien: https://github.com/rstatszh
 
 ## Unterlagen vom letzten Austausch, 22.03.2021
 
