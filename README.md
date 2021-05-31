@@ -8,7 +8,7 @@ Der R-Austausch richtet sich an R Nutzer*innen in der Zürcher Kantonsverwaltung
 
 ### Corona-Auswertungen mit R in der GD, Damian Brunold, GD Datenanalyse
 
-Nach einen kurzen Überblick der durch die GD erstellen Corona-Auswertungen - und der dabei erlebten organisatorischen Herausforderungen - schauen wir uns im zweiten Teil die Verwendung des von der GD entwickelten R-Packages `daplot` an, sowie die Grundzüge der Package-Implementation.
+Nach einem kurzen Überblick der durch die GD erstellten Corona-Auswertungen - und der dabei erlebten organisatorischen Herausforderungen - schauen wir uns im zweiten Teil die Verwendung des von der GD entwickelten R-Packages `daplot` an, sowie die Grundzüge der Implementation von `daplot`.
 
 https://github.com/datenanalyseGDZH/daplot
 
