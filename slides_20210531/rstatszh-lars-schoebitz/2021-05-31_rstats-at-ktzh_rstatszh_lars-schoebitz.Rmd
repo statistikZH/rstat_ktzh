@@ -340,6 +340,8 @@ class: middle, inverse
 
 Für die Aufmerksamkeit!
 
+Für die super Zusammenarbeit mit dem STAT! 
+
 Für die R packages [{xaringan}](https://github.com/yihui/xaringan) und [{xaringanthemer}](https://github.com/gadenbuie/xaringanthemer) mit welchen die Folien geschrieben wurden.
 
 Eine PDF Version der Folien kann hier heruntergeladen werden: 
