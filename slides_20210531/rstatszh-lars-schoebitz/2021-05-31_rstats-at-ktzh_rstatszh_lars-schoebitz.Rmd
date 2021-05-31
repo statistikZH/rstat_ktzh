@@ -287,66 +287,6 @@ background-size: contain
 - Am Ende des Kurses hoffe ich die Teilnehmer_innen bis zu diesem Punkt zu bringen
 - Es ist der Punkt an dem die ersten Herausforderungen überwältigt wurden und man weiss wie man sich selbst weiterhelfen kann
 
----
-class: middle, inverse
-
-# .big[Nutze R um R zu lehren]
-
----
-.panelset[
-
-.panel[.panel-name[Slides]
-
-Diese Folien wurden mit R geschrieben. Sie enthalten:
-
-- Code
-- Output des Codes
-- Interaktive Visualisierungen
-
-]
-
-.panel[.panel-name[Code]
-
-```{r penguins, fig.show = "hide", echo=TRUE, warning=FALSE}
-ggplot(data = penguins, 
-       mapping = aes(x = bill_depth_mm, 
-                     y = bill_length_mm,
-                     colour = species)) +
-  geom_point() +
-  labs(title = "Bill depth and length",
-       subtitle = "Dimensions for Adelie, Chinstrap, and Gentoo Penguins",
-       x = "Bill depth (mm)", 
-       y = "Bill length (mm)",
-       colour = "Species") +
-  theme_minimal(base_size = 12)
-```
-]
-.panel[.panel-name[Output]
-```{r ref.label = "penguins", echo = FALSE, warning = FALSE, out.width = "90%", fig.width = 8}
-```
-]
-
-.panel[.panel-name[Interaktive Vis]
-```{r, out.width="100%"}
-
-plot <- ggplot(data = penguins, 
-       mapping = aes(x = bill_depth_mm, 
-                     y = bill_length_mm,
-                     colour = species)) +
-  geom_point() +
-  labs(title = "Bill depth and length",
-       x = "Bill depth (mm)", 
-       y = "Bill length (mm)",
-       colour = "Species") +
-  theme_minimal()
-
-plotly::ggplotly(plot, width = 9, height = 8)
-
-```
-]
-]
-
-???
 
 ---
 class: middle, inverse
@@ -400,7 +340,76 @@ class: middle, inverse
 
 Für die Aufmerksamkeit!
 
+Für die super Zusammenarbeit mit dem STAT! 
+
 Für die R packages [{xaringan}](https://github.com/yihui/xaringan) und [{xaringanthemer}](https://github.com/gadenbuie/xaringanthemer) mit welchen die Folien geschrieben wurden.
 
 Eine PDF Version der Folien kann hier heruntergeladen werden: 
-XXX
+https://github.com/statistikZH/rstats_ktzh/raw/master/slides_20210531/rstatszh-lars-schoebitz/2021-05-31_rstats-at-ktzh_rstatszh_lars-schoebitz.pdf
+
+
+---
+class: middle
+
+# .big[Zusätzliche Folien]
+
+---
+class: middle, inverse
+
+# .big[Nutze R um R zu lehren]
+
+---
+.panelset[
+
+.panel[.panel-name[Slides]
+
+Diese Folien wurden mit R geschrieben. Sie enthalten:
+
+- Code
+- Output des Codes
+- Interaktive Visualisierungen
+
+]
+  
+.panel[.panel-name[Code]
+
+```{r penguins, fig.show = "hide", echo=TRUE, warning=FALSE}
+ggplot(data = penguins, 
+       mapping = aes(x = bill_depth_mm, 
+                     y = bill_length_mm,
+                     colour = species)) +
+  geom_point() +
+  labs(title = "Bill depth and length",
+       subtitle = "Dimensions for Adelie, Chinstrap, and Gentoo Penguins",
+       x = "Bill depth (mm)", 
+       y = "Bill length (mm)",
+       colour = "Species") +
+  theme_minimal(base_size = 12)
+```
+]
+.panel[.panel-name[Output]
+```{r ref.label = "penguins", echo = FALSE, warning = FALSE, out.width = "90%", fig.width = 8}
+```
+]
+
+.panel[.panel-name[Interaktive Vis]
+```{r, out.width="100%"}
+
+plot <- ggplot(data = penguins, 
+       mapping = aes(x = bill_depth_mm, 
+                     y = bill_length_mm,
+                     colour = species)) +
+  geom_point() +
+  labs(title = "Bill depth and length",
+       x = "Bill depth (mm)", 
+       y = "Bill length (mm)",
+       colour = "Species") +
+  theme_minimal()
+
+plotly::ggplotly(plot, width = 9, height = 8)
+
+```
+]
+]
+
+???
