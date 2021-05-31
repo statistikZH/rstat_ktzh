@@ -4,7 +4,7 @@
 
 Der R-Austausch richtet sich an R Nutzer*innen in der Zürcher Kantonsverwaltung. Er dient als Plattform für den Wissensaustausch und der Vernetzung rund um die offene Statistiksoftware R. 
 
-## Themen vom nächsten Austausch, 31.05.2021
+## R Austausch vom 31.05.2021
 
 ### Corona-Auswertungen mit R in der GD, Damian Brunold, GD Datenanalyse
 
@@ -20,7 +20,7 @@ https://statistikzh.github.io/statR/
 
 ### R-Kurse für Mitarbeitende der Kantonsverwaltung, Lars Schöbitz
 
-## Unterlagen vom letzten Austausch, 22.03.2021
+## R Austausch vom 22.03.2021
 
 [Ergebnisse Mentimeter-Umfrage](https://github.com/statistikZH/rstats_ktzh/blob/master/slides_20210322/Mentimeter_R-Austausch.pdf)
 
