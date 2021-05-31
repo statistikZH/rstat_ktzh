@@ -1,0 +1,406 @@
+---
+title: "RSTATS@KTZH"
+subtitle: "rstatsZH - Data Science mit R"
+author: "Lars Schöbitz"
+date: "2021-05-31"
+output:
+  xaringan::moon_reader:
+    css: ["default", "assets/css/my-css-style.css", "assets/css/xaringan-themer.css"]
+    seal: false 
+    lib_dir: libs
+    nature:
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+      highlightStyle: solarized-light
+      highlightLanguage: ["r", "css", "yaml"]
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+---
+
+```{r setup, include=FALSE}
+options(
+  htmltools.dir.version = FALSE,   
+  htmltools.preserve.raw = FALSE # to fix HTML issue
+  )
+# figure height, width, dpi
+knitr::opts_chunk$set(echo = FALSE, 
+                      warning = FALSE, 
+                      eval = TRUE,
+                      fig.width = 6, 
+                      fig.asp = 0.5,
+                      comment = "", 
+                      cache = FALSE, 
+                      out.width = "100%",
+                      fig.align = "center",
+                      dpi = 300,
+                      message = FALSE)
+
+# ggplot2 set theme
+ggplot2::theme_set(ggplot2::theme_gray(base_size = 16))
+
+library(tidyverse)
+library(palmerpenguins)
+library(xaringanExtra)
+
+xaringanExtra::use_panelset()
+xaringanExtra::use_share_again()
+
+xaringanExtra::style_share_again(
+  share_buttons = c("twitter", "linkedin", "pocket")
+)
+
+# load packages -----------------------------------------------------------
+
+library(xaringanthemer)
+
+# set options -------------------------------------------------------------
+
+style_mono_accent(
+  base_color = "#0F4C81", # Pantone Classic Blue
+  header_font_google = google_font("Montserrat"),
+  code_font_google = google_font("Fira Mono"), 
+  code_font_size = "1.2rem",
+  text_font_size = "1.4rem", 
+  header_h1_font_size = "2.0rem",
+  header_h2_font_size = "1.75rem",
+  header_h3_font_size = "1.5rem",
+  footnote_font_size = "0.8rem",
+  footnote_position_bottom = "20px",
+  header_background_padding = "2rem",
+  outfile = here::here("slides_20210531/rstatszh-lars-schoebitz/assets/xaringan-themer.css")
+)
+
+# htmttools
+
+library(htmltools)
+
+```
+
+```{r broadcast, echo=FALSE}
+xaringanExtra::use_broadcast()
+```
+
+
+class: title-slide
+
+<script async defer data-domain="lse.de" src="https://plausible.io/js/plausible.js"></script>
+
+
+# `r rmarkdown::metadata$title`
+
+## `r rmarkdown::metadata$subtitle`
+
+.bottom[
+
+```{r, echo=FALSE}
+p(rmarkdown::metadata$author)
+p(rmarkdown::metadata$date)
+p("Slides: lse.de/slides/rstatszh")
+```
+]
+
+???
+Hallo Zusammen
+
+Danke für die Möglichkeit, dass ich hier heute kurz über das R Kursangebot 
+präsentieren darf. 
+
+---
+layout: true
+
+
+---
+class: inverse, middle
+
+# .big[Hallo! `r emo::ji("wave")`]
+
+---
+class: left
+background-image: url(img/lars_schoebitz_profile_photo.jpg) 
+background-position: right
+background-size: contain
+
+# Lars Schöbitz
+
+
+- Umweltingenieur
+- Toiletten-Forscher
+- Data Scientist
+- Kanton ZH - STAT - Data Shop Alumni
+- R Nutzer seit 2016
+- [RStudio zertifizierter Instructor](https://education.rstudio.com/trainers/) seit 2020
+- Website: [lse.de](https://www.lse.de?utm_source=Slides&utm_medium=rstatsZH)
+- Twitter: [@larnsce](https://twitter.com/larnsce)
+
+???
+
+.small[
+- Kurz zu mir: Mein Name ist Lars und ich bin seit fast 10 Jahren in der Schweiz.
+
+- Ich bin Diplom Umweltingenieur und bin in die Schweiz gekommen um in der Forschung 
+zu arbeiten
+
+- 5 Jahre lang habe ich bei der Eawag in Dübendorf gearbeitet und mich vor Allem mit der Sanitärversorgung im globalen Süden beschäftigt
+
+- Ich gebe mir oft auch die Rolle des Data Scientist und bin Alumni des fantastischen 
+Praktikumsprogramm des Statistischen Amt
+
+- R nutze ich erst seit etwa fünf Jahren. Mein Einstieg war ein 2-tägiger Workshop aber der Grossteil meiner Kompetenzen ist selbständig erworben. 
+
+- Letztes Jahr wurde ich durch RStudio als Instructor zertifiziert und seit diesem Jahr versuche ich mein Geld damit zu verdienen anderen Data Science mit R näher zu bringen.
+] 
+
+---
+class: inverse, middle
+
+# .big[rstatsZH - Data Science mit R]
+
+---
+class: left
+background-image: url(img/starwars-rey-rstats.png)
+background-position: middle
+background-size: contain
+
+
+.footnote[Artwork from [@juliesquid](https://twitter.com/juliesquid) for [@openscapes](https://twitter.com/openscapes) (illustrated by [@allison_horst](https://twitter.com/allison_horst)).]
+
+
+???
+
+- Ein neuartiger Kurs, welcher es sich zum Ziel setzt Analytiker in der Verwaltung mit modernen Werkzeugen für die Arbeit mit Daten auszustatten
+
+- Der Kurs wurde für Beginner konzipiert und Bedarf keinerlei Vorkenntnisse
+
+- Ein Fokus wird auf Kollaboratives Arbeiten und das Kommunizieren von Datenprojekten gelegt, wesshalb wir von Beginn an Git und GitHub nutzen und im R Markdown Format schreiben
+
+---
+class: inverse, middle
+
+# .big[Kursüberblick `r emo::ji("toolbox")`]
+
+
+---
+# Kursüberblick
+
+Sieben Kurseinheiten über sieben Wochen
+
+- **Unterricht:** Wöchentlich 3 Stunden
+- **Übungen:** Übungen während der Kurseinheit 
+- **Hausaufgaben:** Einzureichen bis zum nächsten Kurstag 
+- **Persönliches Tutoring:** Sprechstunden ausserhalb der Kurstage
+- **Abschluss Projekt (freiwillig):** 
+    - Eigene Arbeitsatmosphäre aufbauen
+    - Arbeit mit eigenen Daten 
+    - Bericht erfassen
+    - 5 Minuten Präsentation
+- **Zertifikat:** Bestätigung über Teilnahme
+
+---
+class: inverse, middle
+
+# .big[Werkzeugkiste `r emo::ji("toolbox")`]
+
+---
+# Wekzeugkiste
+
+.pull-left[
+
+# **Kursarbeit**
+
+- Zoom
+- Slack
+- https://rstatszh.github.io/website/
+]
+
+.pull-right[
+
+# Data Science
+
+**Programmieren**
+
+- R
+- RStudio (Cloud)
+- R Tidyverse Packages
+- R Markdown
+
+**Versionskontrolle und Kollaboration**
+
+- Git
+- GitHub
+
+]
+
+---
+class: inverse, middle
+
+# .big[Lernziele `r emo::ji("checkered_flag")`]
+
+---
+# Lernziele
+
+Am Ende des Kurses können Teilnehmer_innen
+
+1. (Daten)projekte reproduzierbar publizieren
+2. Kollaborativ mit Git und GitHub arbeiten
+3. Das Konzept von Tidy Data verstehen und anwenden
+4. Explorative Datenanalysen durchführen
+5. Sich selbst und Anderen helfen mehr über die grosse Welt der Möglichkeiten für Data Science mit R zu lernen
+
+---
+class: inverse, middle
+
+# .big[Die R Achterbahn bewältigen `r emo::ji("exploding_head")`]
+
+---
+background-image: url(img/r_rollercoaster.png)
+background-size: contain 
+
+.footnote[Artwork by [@allison_horst](https://twitter.com/allison_horst)]
+
+???
+
+
+---
+background-image: url(img/rollercoaster-arrow.001.png)
+background-size: contain 
+
+.footnote[Adapted from Artwork by [@allison_horst](https://twitter.com/allison_horst)]
+
+???
+
+- Angsteinflössend
+- Viele neue Konzepte die sich sehr fremd anfühlen
+- Mir geht es darum diesen Einstieg so sanft wie möglich zu machen
+
+---
+background-image: url(img/rollercoaster-arrow.002.png)
+background-size: contain 
+
+.footnote[Adapted from Artwork by [@allison_horst](https://twitter.com/allison_horst)]
+
+???
+
+- Am Ende des Kurses hoffe ich die Teilnehmer_innen bis zu diesem Punkt zu bringen
+- Es ist der Punkt an dem die ersten Herausforderungen überwältigt wurden und man weiss wie man sich selbst weiterhelfen kann
+
+---
+class: middle, inverse
+
+# .big[Nutze R um R zu lehren]
+
+---
+.panelset[
+
+.panel[.panel-name[Slides]
+
+Diese Folien wurden mit R geschrieben. Sie enthalten:
+
+- Code
+- Output des Codes
+- Interaktive Visualisierungen
+
+]
+
+.panel[.panel-name[Code]
+
+```{r penguins, fig.show = "hide", echo=TRUE, warning=FALSE}
+ggplot(data = penguins, 
+       mapping = aes(x = bill_depth_mm, 
+                     y = bill_length_mm,
+                     colour = species)) +
+  geom_point() +
+  labs(title = "Bill depth and length",
+       subtitle = "Dimensions for Adelie, Chinstrap, and Gentoo Penguins",
+       x = "Bill depth (mm)", 
+       y = "Bill length (mm)",
+       colour = "Species") +
+  theme_minimal(base_size = 12)
+```
+]
+.panel[.panel-name[Output]
+```{r ref.label = "penguins", echo = FALSE, warning = FALSE, out.width = "90%", fig.width = 8}
+```
+]
+
+.panel[.panel-name[Interaktive Vis]
+```{r, out.width="100%"}
+
+plot <- ggplot(data = penguins, 
+       mapping = aes(x = bill_depth_mm, 
+                     y = bill_length_mm,
+                     colour = species)) +
+  geom_point() +
+  labs(title = "Bill depth and length",
+       x = "Bill depth (mm)", 
+       y = "Bill length (mm)",
+       colour = "Species") +
+  theme_minimal()
+
+plotly::ggplotly(plot, width = 9, height = 8)
+
+```
+]
+]
+
+???
+
+---
+class: middle, inverse
+
+#.big[Git und GitHub]
+
+---
+# Wie nutzen wir Git und GitHub?
+
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("img/whole-game-01.png")
+```
+
+---
+# Wie nutzen wir Git und GitHub?
+
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("img/whole-game-02.png")
+```
+
+---
+# Wie nutzen wir Git und GitHub?
+
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("img/whole-game-03.png")
+```
+
+---
+# Wie nutzen wir Git und GitHub?
+
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("img/whole-game-04.png")
+```
+
+---
+class: middle, inverse
+
+#.big[Open Course Development]
+
+---
+# Open Course Development
+
+- Öffentliche Webseite mit Kursmaterial
+  - https://rstatszh.github.io/website/
+- Öffentliche GitHub Repositories für Folien und Übungen
+  - https://github.com/rstatszh
+  
+
+---
+# `r emo::ji("sunflower")` Danke 
+
+Für die Aufmerksamkeit!
+
+Für die R packages [{xaringan}](https://github.com/yihui/xaringan) und [{xaringanthemer}](https://github.com/gadenbuie/xaringanthemer) mit welchen die Folien geschrieben wurden.
+
+Eine PDF Version der Folien kann hier heruntergeladen werden: 
+XXX
