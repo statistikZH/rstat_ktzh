@@ -8,6 +8,10 @@ Der R-Austausch richtet sich an R Nutzer*innen in der Zürcher Kantonsverwaltung
 
 ### Corona-Auswertungen mit R in der GD, Damian Brunold, GD Datenanalyse
 
+Nach einen kurzen Überblick der durch die GD erstellen Corona-Auswertungen - und der dabei erlebten organisatorischen Herausforderungen - schauen wir uns im zweiten Teil die Verwendung des von der GD entwickelten R-Packages `daplot` an, sowie die Grundzüge der Package-Implementation.
+
+https://github.com/datenanalyseGDZH/daplot
+
 ### statR Package des Statistischen Amts, Michelle Donzallaz & Thomas Lo Russo, Statistisches Amt
 
 Update und Weiterentwicklung der Corporate Design Toolbox für R-Nutzende in der Kantonsverwaltung. Das statR Package umfasst einige Funktionen, die erlauben rasch schöne Grafiken und xlsx-Dateien im CD des Kantons Zürich zu erstellen. Dazu gehört auch eine Farbpalette und neu auch ein Template für html-Seiten.
