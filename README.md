@@ -6,7 +6,7 @@ Der R-Austausch richtet sich an R Nutzer*innen in der Zürcher Kantonsverwaltung
 
 ## R Austausch vom 30.08.2021
 
-### Status Codes und Zielseiten von URLs auflisten (Michael Schaffner)
+### Status Codes und Zielseiten von URLs auflisten, Michael Schaffner, Staatskanzlei
 
 ### Corinna Grobe
 
