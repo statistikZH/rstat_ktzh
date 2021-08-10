@@ -4,6 +4,12 @@
 
 Der R-Austausch richtet sich an R Nutzer*innen in der Zürcher Kantonsverwaltung. Er dient als Plattform für den Wissensaustausch und der Vernetzung rund um die offene Statistiksoftware R. 
 
+## R Austausch vom 30.08.2021
+
+### Michael Schaffner
+
+### Corinna Grobe
+
 ## R Austausch vom 31.05.2021
 
 ### Corona-Auswertungen mit R in der GD, Damian Brunold, GD Datenanalyse
