@@ -8,7 +8,7 @@ Der R-Austausch richtet sich an R Nutzer*innen in der Zürcher Kantonsverwaltung
 
 ### Status Codes und Zielseiten von URLs auflisten, Michael Schaffner, Staatskanzlei
 
-### Corinna Grobe
+### Temperaturen-Dashboard Corinna Grobe, Statistisches Amt / AWEL 
 
 ## R Austausch vom 31.05.2021
 
