@@ -8,7 +8,14 @@ Der R-Austausch richtet sich an R Nutzer*innen in der Zürcher Kantonsverwaltung
 
 ### Status Codes und Zielseiten von URLs auflisten, Michael Schaffner, Staatskanzlei
 
-### Temperaturen-Dashboard Corinna Grobe, Statistisches Amt / AWEL 
+### Interaktive Datenvisualisierung von Open Government Data am Beispiel der Lokalklimadaten vom AWEL, Corinna Grobe, Statistisches Amt 
+
+Themen wie das Klima interessiert neben Fachleuten auch Journalisten und die breite Öffentlichkeit. Hier sind Visualisierungen eine Schlüsseltechnologie für die Analyse und Darstellung von Klimasimulationen und -beobachtungen.
+Am Beispiel der [Lokalklima-Daten des AWEL](https://opendata.swiss/de/dataset/lufttemperatur-und-luftfeuchte-lora-sensor-messwerte) soll gezeigt werden, wie komplexe und vielschichtige Informationen durch Datenvisualisierungen und Informationsarchitektur visuell strukturiert und kontextualisiert werden, um die Nutzenden bestmöglich durch die Daten zu führen.
+
+Inhaltsseite: https://www.zh.ch/de/umwelt-tiere/klima/klimakarte-daten.html#63279247
+
+Applikation: https://openzh.shinyapps.io/Lokalklima/
 
 ## R Austausch vom 31.05.2021
 
