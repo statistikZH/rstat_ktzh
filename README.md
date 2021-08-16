@@ -17,6 +17,10 @@ Inhaltsseite: https://www.zh.ch/de/umwelt-tiere/klima/klimakarte-daten.html#6327
 
 Applikation: https://openzh.shinyapps.io/Lokalklima/
 
+### Vorstellung Power BI, Frédéric Roggo, Hochbauamt
+
+Das Hochbauamt setzt Power BI seit 2019 als Controlling- und Reportinginstrument ein. Es wird ein Einblick in Power BI gegeben, die Einsatzmöglichkeiten aufgezeigt sowie Vor- und Nachteile erläutert.
+
 ## R Austausch vom 31.05.2021
 
 ### Corona-Auswertungen mit R in der GD, Damian Brunold, GD Datenanalyse
