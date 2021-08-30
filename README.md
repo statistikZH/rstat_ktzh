@@ -19,7 +19,9 @@ Applikation: https://openzh.shinyapps.io/Lokalklima/
 
 ### Vorstellung Power BI, Frédéric Roggo, Hochbauamt
 
-Das Hochbauamt setzt Power BI seit 2019 als Controlling- und Reportinginstrument ein. Es wird ein Einblick in Power BI gegeben, die Einsatzmöglichkeiten aufgezeigt sowie Vor- und Nachteile erläutert.
+Das Hochbauamt setzt Power BI seit 2019 als Controlling- und Reportinginstrument ein. Es wird ein Einblick in Power BI gegeben, die Einsatzmöglichkeiten aufgezeigt sowie Vor- und Nachteile erläutert.  
+
+[Slides](https://github.com/statistikZH/rstats_ktzh/blob/master/3_Fachaustausch_R_PBI.pdf)
 
 ## R Austausch vom 31.05.2021
 
