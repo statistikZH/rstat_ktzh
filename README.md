@@ -8,6 +8,8 @@ Der R-Austausch richtet sich an R Nutzer*innen in der Zürcher Kantonsverwaltung
 
 ### Status Codes und Zielseiten von URLs auflisten, Michael Schaffner, Staatskanzlei
 
+[Slides](https://github.com/statistikZH/rstats_ktzh/blob/master/slides_20210831/R-Pr%C3%A4sentation_URLs-auswerten.pdf) , [R-Code](https://github.com/statistikZH/rstats_ktzh/blob/master/slides_20210831/httr_Funktionen.R)
+
 ### Interaktive Datenvisualisierung von Open Government Data am Beispiel der Lokalklimadaten vom AWEL, Corinna Grobe, Statistisches Amt 
 
 Themen wie das Klima interessiert neben Fachleuten auch Journalisten und die breite Öffentlichkeit. Hier sind Visualisierungen eine Schlüsseltechnologie für die Analyse und Darstellung von Klimasimulationen und -beobachtungen.
