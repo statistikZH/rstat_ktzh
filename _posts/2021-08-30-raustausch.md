@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "R Austausch vom 30.18.2021"
+title: "R Austausch vom 30.08.2021"
 ---
 
 ## Programm
