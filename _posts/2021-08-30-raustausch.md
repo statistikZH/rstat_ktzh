@@ -7,7 +7,9 @@ title: "R Austausch vom 30.18.2021"
 
 ### 1. Status Codes und Zielseiten von URLs auflisten, Michael Schaffner, Staatskanzlei
 
-[Slides](https://github.com/statistikZH/rstats_ktzh/blob/master/slides_20210831/R-Pr%C3%A4sentation_URLs-auswerten.pdf) , [R-Code](https://github.com/statistikZH/rstats_ktzh/blob/master/slides_20210831/httr_Funktionen.R)
+[Slides](https://github.com/statistikZH/rstats_ktzh/blob/master/slides_20210831/R-Pr%C3%A4sentation_URLs-auswerten.pdf) 
+
+[R-Code](https://github.com/statistikZH/rstats_ktzh/blob/master/slides_20210831/httr_Funktionen.R)
 
 ### 2. Interaktive Datenvisualisierung von Open Government Data am Beispiel der Lokalklimadaten vom AWEL, Corinna Grobe, Statistisches Amt 
 
