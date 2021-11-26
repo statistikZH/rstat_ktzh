@@ -21,7 +21,7 @@ Update und Weiterentwicklung der Corporate Design Toolbox für R-Nutzende in der
 
 https://statistikzh.github.io/statR/
 
-### «rstatsZH – Data Science mit R», Kursangebot für Mitarbeiter_innen der Kantonsverwaltung
+### 3. «rstatsZH – Data Science mit R», Kursangebot für Mitarbeiter_innen der Kantonsverwaltung
 
 __[Lars Schöbitz](https://www.lse.de/)__
 
