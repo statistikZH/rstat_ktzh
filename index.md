@@ -1,37 +1,85 @@
-## Welcome to GitHub Pages
+![](https://storage.googleapis.com/dx-liip/production/storage/uploads/group/kt_zh.png)
 
-You can use the [editor on GitHub](https://github.com/statistikZH/rstats_ktzh/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+# RSTATS@KTZH
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Der R-Austausch richtet sich an R Nutzer*innen in der Zürcher Kantonsverwaltung. Er dient als Plattform für den Wissensaustausch und der Vernetzung rund um die offene Statistiksoftware R. 
 
-### Markdown
+## R Austausch vom 30.08.2021
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Status Codes und Zielseiten von URLs auflisten, Michael Schaffner, Staatskanzlei
 
-```markdown
-Syntax highlighted code block
+[Slides](https://github.com/statistikZH/rstats_ktzh/blob/master/slides_20210831/R-Pr%C3%A4sentation_URLs-auswerten.pdf) , [R-Code](https://github.com/statistikZH/rstats_ktzh/blob/master/slides_20210831/httr_Funktionen.R)
 
-# Header 1
-## Header 2
-### Header 3
+### Interaktive Datenvisualisierung von Open Government Data am Beispiel der Lokalklimadaten vom AWEL, Corinna Grobe, Statistisches Amt 
 
-- Bulleted
-- List
+Themen wie das Klima interessiert neben Fachleuten auch Journalisten und die breite Öffentlichkeit. Hier sind Visualisierungen eine Schlüsseltechnologie für die Analyse und Darstellung von Klimasimulationen und -beobachtungen.
+Am Beispiel der [Lokalklima-Daten des AWEL](https://opendata.swiss/de/dataset/lufttemperatur-und-luftfeuchte-lora-sensor-messwerte) soll gezeigt werden, wie komplexe und vielschichtige Informationen durch Datenvisualisierungen und Informationsarchitektur visuell strukturiert und kontextualisiert werden, um die Nutzenden bestmöglich durch die Daten zu führen.
 
-1. Numbered
-2. List
+Inhaltsseite: https://www.zh.ch/de/umwelt-tiere/klima/klimakarte-daten.html#63279247
 
-**Bold** and _Italic_ and `Code` text
+Applikation: https://openzh.shinyapps.io/Lokalklima/
 
-[Link](url) and ![Image](src)
-```
+[Slides](https://github.com/statistikZH/rstats_ktzh/blob/master/slides_20210831/2_Fachaustausch_R_Lokalklima.pdf)
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+### Vorstellung Power BI, Frédéric Roggo, Hochbauamt
 
-### Jekyll Themes
+Das Hochbauamt setzt Power BI seit 2019 als Controlling- und Reportinginstrument ein. Es wird ein Einblick in Power BI gegeben, die Einsatzmöglichkeiten aufgezeigt sowie Vor- und Nachteile erläutert.  
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/statistikZH/rstats_ktzh/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+[Slides](https://github.com/statistikZH/rstats_ktzh/blob/master/slides_20210831/3_Fachaustausch_R_PBI.pdf)
 
-### Support or Contact
+## R Austausch vom 31.05.2021
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### Corona-Auswertungen mit R in der GD, Damian Brunold, GD Datenanalyse
+
+Nach einem kurzen Überblick der durch die GD erstellten Corona-Auswertungen - und der dabei erlebten organisatorischen Herausforderungen - schauen wir uns im zweiten Teil die Verwendung des von der GD entwickelten R-Packages `daplot` an, sowie die Grundzüge der Implementation von `daplot`.
+
+https://github.com/datenanalyseGDZH/daplot
+
+### statR Package des Statistischen Amts, Michelle Donzallaz & Thomas Lo Russo, Statistisches Amt
+
+Update und Weiterentwicklung der Corporate Design Toolbox für R-Nutzende in der Kantonsverwaltung. Das statR Package umfasst einige Funktionen, die erlauben rasch schöne Grafiken und xlsx-Dateien im CD des Kantons Zürich zu erstellen. Dazu gehört auch eine Farbpalette und neu auch ein Template für html-Seiten.
+
+https://statistikzh.github.io/statR/
+
+### «rstatsZH – Data Science mit R», Kursangebot für Mitarbeiter_innen der Kantonsverwaltung, [Lars Schöbitz](https://www.lse.de/)
+
+Einblick in den Kursinhalt und das Kursmanagement von "rstatsZH - Data Science mit R". Das Kursangebot besteht seit Januar 2021 und wird sowohl für Mitarbeiter_innen der kantonalen Verwaltung als auch für externe Teilnehmer_innen angeboten. Kurswerkzeuge umfassen das Arbeiten mit R/RStudio in der RStudio Cloud, R Tidverse Packages, R Markdown, Git und GitHub. Jegliche Kursmaterialien (Folien, Übungen) werden unter einer open source Lizenz auf GitHub publiziert.
+
+- Folien: https://lse.de/slides/rstatszh/
+- Kurswebsite: https://rstatszh.github.io/website/
+- Kursmaterialien: https://github.com/rstatszh
+
+## R Austausch vom 22.03.2021
+
+[Ergebnisse Mentimeter-Umfrage](https://github.com/statistikZH/rstats_ktzh/blob/master/slides_20210322/Mentimeter_R-Austausch.pdf)
+
+### 1. Template für PDF-Berichte der BISTA (Flavian Imlig)
+[Slides](https://github.com/statistikZH/rstats_ktzh/blob/master/slides_20210322/biplaRartcl_slides.pdf) 
+
+### 2. Neues RStudio Server Setup des Statistischen Amtes (Thomas Knecht)
+ - Vorstellen des neuen Setups des Statistischen Amtes: [Slides](https://github.com/statistikZH/rstats_ktzh/blob/master/slides_20210322/RStudio-Server-Setup.pdf)
+
+### 3. Machine Learning / AI 
+Kurzinputs zu bestehenden Anwendungen / Erfahrungen
+- Christian Ruiz (Plausi+)
+- Thomas Lo Russo (PlausiApp : [Slides](https://tlorusso.github.io/talks/plausiapp_032021/))
+
+## Kontakt
+
+Andrea Schnell  <br>
+andrea.schnell@statistik.ji.zh.ch <br>
+
+![Twitter Follow](https://img.shields.io/twitter/follow/statistik_zh?style=social)
+
+## Lizenzen
+
+Dieses Projekt untersteht folgenden Lizenzen: <br>
+- Datenlizenz: [Attribution 4.0 International](https://github.com/statistikZH/STAT_Schablone/blob/master/LICENSE_data)
+- Codelizenz: [Copyright (c) <2019> <Statistisches Amt Kanton Zürich>](https://github.com/statistikZH/STAT_Schablone/blob/master/LICENSE_code)
+
+## Richtlinien für Beiträge
+Wir begrüßen Beiträge. Bitte lesen Sie unsere [CONTRIBUTING.md](https://github.com/statistikZH/STAT_Schablone/blob/master/CONTRIBUTING.md) Datei, wenn sie daran interessiert sind. Hier finden Sie Informationen die zeigen wie Sie beitragen können. 
+
+Bitte beachten Sie, dass dieses Projekt mit einem [Verhaltenskodex](https://github.com/statistikZH/STAT_Schablone/blob/master/CodeOfConduct.md) veröffentlicht wird. Mit Ihrer Teilnahme an diesem Projekt erklären Sie sich mit dessen Bedingungen einverstanden.
+
+
