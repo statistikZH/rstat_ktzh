@@ -13,13 +13,13 @@ Werkstattbericht : Automatisierte Daten- und Metadatenaufbereitung für die offe
 
 __Thomas Knecht, Datashop__
 
-Tipps & Tricks für die Arbeit mit JSONs und verschachtelten Listen arbeiten in R.
+Tipps & Tricks für die Arbeit mit JSONs und verschachtelten Listen in R.
 
 ### 3. Kommunales Politikbarometer für Uster (Shiny-App) ###
 
 __Andreas Wyss__
 
-Anhand der mit R und Shiny programmierten Applikation lässt sich das politische Profil der einzelnen Gemeinderät/en/innen erstellen.
+Gastreferent Andreas Wyss von der Stadt Uster stellt sein mit R und Shiny programmiertes Politikbarometer vor. Mit der Applikation lassen sich die politischen Profile der Ustermer Gemeinderätinnen erstellen.
 
 [https://data.socialthink.net/uster/](https://data.socialthink.net/uster/)
 
