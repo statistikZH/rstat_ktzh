@@ -29,4 +29,4 @@ https://data.socialthink.net/uster/
 
 - R-Mentoring : gibt es Bedarf an Mentoring oder Teilnehmende mit Interesse als Mentor*in mitzumachen? 
 
-- Wünsche und Ideen für künftige Beiträge  (während des Austauschs - nicht vorher)
+- Wünsche und Ideen für künftige Beiträge
