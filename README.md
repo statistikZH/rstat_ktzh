@@ -4,7 +4,7 @@
 
 Der R-Austausch richtet sich an R Nutzer*innen in der Zürcher Kantonsverwaltung. Er dient als Plattform für den Wissensaustausch und der Vernetzung rund um die offene Statistiksoftware R. 
 
-## Landingpage 
+## Aktuelles Programm / Vergangene Termine
 
 https://statistikzh.github.io/rstats_ktzh/
 
