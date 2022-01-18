@@ -21,7 +21,7 @@ __Andreas Wyss__
 
 Anhand der mit R und Shiny programmierten Applikation lässt sich das politische Profil der einzelnen Gemeinderät/en/innen erstellen.
 
-https://data.socialthink.net/uster/
+[https://data.socialthink.net/uster/](https://data.socialthink.net/uster/)
 
 ### Weitere Infos / Themen
 
