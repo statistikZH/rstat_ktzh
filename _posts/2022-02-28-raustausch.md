@@ -30,3 +30,5 @@ Gastreferent Andreas Wyss von der Stadt Uster stellt sein mit R und Shiny progra
 - R-Mentoring : gibt es Bedarf an Mentoring oder Teilnehmende mit Interesse als Mentor/in mitzumachen? 
 
 - Wünsche und Ideen für künftige Beiträge
+
+- Nächster R-Austausch als physischer Anlass 
