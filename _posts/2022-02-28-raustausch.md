@@ -31,4 +31,4 @@ Gastreferent Andreas Wyss von der Stadt Uster stellt sein mit R und Shiny progra
 
 - Wünsche und Ideen für künftige Beiträge
 
-- Nächster R-Austausch als physischer Anlass 
+- Nächster R-Austausch als physischer Anlass
