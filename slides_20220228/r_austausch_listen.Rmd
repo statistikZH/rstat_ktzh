@@ -1,0 +1,299 @@
+---
+title: "Arbeiten mit Listen"
+author: "Thomas Knecht"
+date: "28.02.2022"
+output:
+  html_document:
+    css: style.css
+    template: zhtemplate.html
+---
+
+# Einführung
+
+
+Lektüre:
+
+- https://bookdown.org/taragonmd/phds/working-with-lists-and-data-frames.html
+
+
+Listen tauchen in R immer wieder auf, manchmal bewusst, oft aber auch unbewusst.
+Die Struktur von Listen unterscheidet sich wesentlich von der von Data Frames.
+Deshalb verlangen Listen einen anderen umgang in der Bearbeitung.
+
+Das arbeiten mit Listen kann aber sehr hilfreich sein und für gewisse Prozesse kann das Arbeiten mit Listen ein mächtiges Tool sein.
+
+Ziel dieser kurzen Präsentation ist eine kurze Einführung in das Arbeiten mit Listen.
+
+
+## Listen Verstehen
+Listen ermöglichen es unterschiedliche Objekte in ein Objekt zusammenzuführen.
+
+
+Es können zum Beispiel unterschiedliche Klassen in einem Objekt zusammengeführ werden. 
+Das wird mit dieser Grafik von Tomás J. Aragón ganz gut veranschaulicht:
+
+![Abbildung 1: Schematische Darstellung von Liston, erstellt durch Tomás J. Aragón](/home/b105ptk@ji.ktzh.ch/list.png)
+
+
+Es kommt oft auch vor, dass Listen in Listen abgelegt werden. 
+Gerade wenn zum Beispiel json Files ingelesen werden, dann sind das eigentlich immer verschachtelte Listen.
+
+Listenelemte können einen Namen haben, was das Ansprechen eines solchen Inhalts etwas einfacher macht.
+
+## Wie erkenne ich eine Liste?
+
+```{r}
+
+# Erstellen einer Beispiels-Liste
+beispiel_liste <- list(c(1,2), c("smiley", "blume", "blitz", "herz"))
+
+# Abfragen der Klasse
+class(beispiel_liste)
+
+
+```
+
+Auch im Environment sieht man ob ein Objekt eine Liste ist.
+
+## Ansprechen von Listenelementen und Inhalten
+
+Das Ansprechen oder extrahieren von Listenelementen kann einerseits über den Index oder auch, falls vorhanden, über den Namen eines Elements gemacht werden.
+
+Beim Extrahieren mit dem Index muss folgendes beachtet werden:
+
+  - Ein Listenelemnt wird mit [] extrahiert.
+  - Ein Inhalt wird mit [[]] extrahiert
+  
+  
+Was bedeutet das genau am Beispiel unserer `beispiel_liste`:
+
+```{r}
+
+# Extrahieren des ersten Listenelementes
+listenelement <- beispiel_liste[1]
+
+# Die Klasse ist weiterhin eine Liste
+class(listenelement)
+
+listenelement
+
+# Extrahieren des ersten Listeninhaltes
+inhalt <- beispiel_liste[[1]]
+
+# Die Klasse ist nun die des Vectors
+class(inhalt)
+
+inhalt
+
+```
+
+Wenn man eine Liste hat mit benamsten Listenelementen, dann kann man den Inhalt direkt mit diesem Namen extrahieren und zwar gleich, wie man bei einem Data Frame eine spalte Anspricht:
+
+```{r}
+
+# Beispiel einer Liste mit benamsden Listenelementen
+beispiel_liste_named <- list(nummer = c(1,2), charakter = c("smiley", "blume", "blitz", "herz"))
+
+# Zugreiffen auf den Listeninhalt mit Namen
+inhalt_nummer <- beispiel_liste_named$nummer
+
+class(inhalt_nummer)
+inhalt_nummer
+
+# Zugreiffen auf den Listeninhalt mit Namen
+inhalt_charakter <- beispiel_liste_named$charakter
+
+class(inhalt_charakter)
+inhalt_charakter
+
+
+```
+
+
+Wenn man nun eine verschachtelte Liste hat, dann wird es etwas umständlicher aber man kann einfach diese Klammern und Namen aneinander reihen, bis man am richtigen Ort in der Liste ist:
+
+```{r}
+
+# Beispiel einer verschatelten Liste (Listen in Listen)
+beispiel_liste_verschachtelt <- list(nummer = list(c(1,2), c(3,4), c(5,6)), charakter = c("smiley", "blume", "blitz", "herz"))
+
+# Kombination aus Namen und eckigen Klammern (Index)
+drittes_nummer_element <- beispiel_liste_verschachtelt$nummer[[3]]
+
+# Nur mit Index
+drittes_nummer_element <- beispiel_liste_verschachtelt[[1]][[3]]
+
+# das funktioniert aber nicht
+#drittes_nummer_element <- beispiel_liste_verschachtelt[1][[3]]
+
+```
+
+## Manipulieren von Listen
+
+Für die Manipulation von Listeninhalten gibt es sehr nützliche und mächtige Tools.
+
+In BaseR ist das die apply-Familie:
+
+- https://www.guru99.com/r-apply-sapply-tapply.html
+
+im Tidyverse ist es die purrr-Familie:
+
+- https://purrr.tidyverse.org/
+
+
+Das purrr-Package bietet etwas mehr Funktionalität und es basiert auch auf praktisch keiner dependency, weshalb man es ohne schlechtes gewissen verwenden kann.
+
+
+## Komplizierteres Beispiel
+
+Wir haben hier ein Beispiel vorbereitet, welches auf einem öffentlichen json File beruht und an dem ihr auch selber probieren könnt.
+
+
+```{r, results = FALSE, warning=FALSE, message=FALSE}
+
+library(rjson)
+library(jsonlite)
+library(tidyverse)
+
+
+
+
+# ladestationen direkt ab source
+
+jdat <- rjson::fromJSON(paste(readLines("https://data.geo.admin.ch/ch.bfe.ladestellen-elektromobilitaet/data/oicp/ch.bfe.ladestellen-elektromobilitaet.json"), collapse=""))
+
+
+```
+
+Stellen wir uns mal folgende Fragen welche relativ einfach mit extraktion gelöst werden können:
+
+1. Was für Anbieter gibt es?
+2. In welchen Ortschaften gibt es Ladestationen?
+
+
+
+Was für Anbieter gibt es?
+
+```{r}
+
+library(purrr)
+
+# machen wir das mal für den ersten Anbieter
+anbieter1 <- jdat$EVSEData[[1]]$OperatorName
+
+# machen wir das nun für alle Anbieter
+alle_anbieter <- map(jdat$EVSEData, "OperatorName") %>% unlist()
+
+```
+
+In welchen Ortschaften gibt es Ladestationen?
+
+```{r}
+
+# machen wir das mal für den ersten Anbieter und die erste Ladestation
+anibeter1_ladestation1_ortschaft <- jdat$EVSEData[[1]]$EVSEDataRecord[[1]]$Address$City
+
+# machen wir das nun für alle Ladestationen
+alle_ortschaften <- map(jdat$EVSEData, ~map(.x$EVSEDataRecord, ~.$Address$City)) %>% unlist() %>% unique()
+
+
+```
+
+Na ja, die sind jetzt nicht besonders einheitlich, aber ist schon mal gut, dass man die sieht und wo die Probleme liegen könnten :). 
+
+
+Das Arbeiten mit Listen bedeutet aber auch oft das erstellen von Funktionen, die man dann auf die Listenelemente anwenden kann.
+
+3. Wie viele Ladestationen besitzt ein Anbieter?
+
+```{r}
+
+# schreiben wir zuerst eine Funktion welche das für uns macht
+get_n_locations_per_supplier <- function(list_element){
+  
+  supplier <- list_element$OperatorName
+  
+  n_chargers <- length(list_element$EVSEDataRecord)
+  
+  output <- data.frame(
+    supplier = supplier,
+    n_chargers = n_chargers
+  )
+  
+}
+
+# Der Output einer unserer Funktion ist ein Data Frame. 
+# Mit map_df kommt dann automatisch ein Data Frame zurück. 
+# Mit map oder lapply würde eine Liste mit den einzelnen Data Frames zurück kommen, welche man
+# do.call(rbind.data.frame, liste), zusammenfügen müsste.
+anzahl_ladestationen_pro_anbieter <- map_df(jdat$EVSEData, ~get_n_locations_per_supplier(.))
+
+
+```
+
+
+Na ja, wie wir vorhin gesehen haben, sind die Namen der Ortschaften nicht so sauber. Deshalb versuchen wir mal über die Geokoordinaten etwas besser Auskunft über die Standorte zu erhalten.
+
+
+```{r}
+
+# Schreiben wir eine Funktion welche wir über jedes Listenelement der 2 Stufe (Anbieter laufen lassen können)
+# Innterhalb dieser Funktion machen wir dann wiederum einen map welcher die Informationen
+# der einzelnen Ladestationen abfragt.
+get_info_all_stations <- function(list_element){
+  
+  supplier <- list_element$OperatorName
+  
+  # Map über die Einzelnen Ladestationen um die Informationen zu extrahieren
+  station_infos <- map_df(list_element$EVSEDataRecord, ~extract_single_station_info(.))
+  
+  station_infos$supplier <- supplier
+  
+  return(station_infos)
+  
+  
+}
+
+# Diese Funktion extrahiert die Geokoordinaten, Ladestations-ID und die Steckertypen 
+# der einzelnen Ladestationen und gibt und einen Data Frame mit einer Zeile zurück.
+# Diese Funktion wird innerhalb der get_info_all_stations() funktion aufgerufen.
+extract_single_station_info <- function(list_element){
+
+  station_id <- list_element$ChargingStationId
+  
+  geocoorinates <- list_element$GeoCoordinates[[1]]
+  
+  plugs <- list_element$Plugs
+  
+  output <- data.frame(
+    station_id = rep(station_id, length(plugs)),
+    coordinates = rep(geocoorinates, length(plugs)),
+    plug_typ = plugs
+  )
+  
+}
+
+# Wenden wir nun die Funktionen auf die Liste an.
+# Auch hier wird wieder ein Data Frame erstellt.
+all_station_infos <- map_df(jdat$EVSEData, ~get_info_all_stations(.))
+
+
+```
+
+Nun es gibt dann zum Beispiel Fragen wie, warum ist jetzt hier die Adresse noch eine separate List? Kann man das auf die gleiche Setzten wie die anderen Einträge?
+
+Es geht, aber ist gar nicht so einfach...
+
+```{r}
+
+ladestation <- jdat$EVSEData[[1]]$EVSEDataRecord[[1]]
+
+adresse <- ladestation$Address
+
+rest <- ladestation[!grepl("Address", names(ladestation))]
+
+ladestation <- c(unlist(adresse, recursive = F), rest)
+
+
+
+```
