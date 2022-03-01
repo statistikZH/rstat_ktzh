@@ -21,7 +21,7 @@ __Andreas Wyss__
 
 Gastreferent Andreas Wyss von der Stadt Uster stellt sein mit R und Shiny programmiertes Politikbarometer vor. Mit der Applikation lassen sich die politischen Profile der Ustermer Gemeinderätinnen erstellen.
 
-[https://politikbarometer.shinyapps.io/uster/](https://politikbarometer.shinyapps.io/uster/)
+[https://politikbarometer.shinyapps.io/uster/](https://politikbarometer.shinyapps.io/uster/)  
 [Slides](https://docs.google.com/presentation/d/1-zeFbMvIULItM6hhZbNk-qs-Mrh-Fc61gc8IkKDJPBQ/edit)
 
 ### Weitere Infos / Themen
