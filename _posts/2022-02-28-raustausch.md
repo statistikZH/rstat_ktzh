@@ -17,6 +17,8 @@ __Thomas Knecht, Datashop__
 
 Tipps & Tricks für die Arbeit mit JSONs und verschachtelten Listen in R.
 
+[Rmd-File](https://github.com/statistikZH/rstats_ktzh/blob/master/slides_20220228/r_austausch_listen.Rmd)
+
 ### 3. Kommunales Politikbarometer für Uster (Shiny-App) ###
 
 __Andreas Wyss__
