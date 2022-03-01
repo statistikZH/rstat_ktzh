@@ -8,7 +8,8 @@ title: "R Austausch vom 28.02.2022"
 __Simon Graf, Wahlen & Abstimmungen__
 
 Werkstattbericht : Automatisierte Daten- und Metadatenaufbereitung für die offenen Behördendaten zu Abstimmungsparolen und Empfehlungen.   
-[Slides](https://docs.google.com/presentation/d/1Hu_-JpOFnSqhpDpF1GRg68yAK4GyAiS3yo7UYC_QLk0/edit#slide=id.g114b595dd69_0_305)
+[Slides](https://docs.google.com/presentation/d/1Hu_-JpOFnSqhpDpF1GRg68yAK4GyAiS3yo7UYC_QLk0/edit#slide=id.g114b595dd69_0_305)  
+Kontakt für Fragen zum Package: thomas.lorusso@statistik.ji.zh.ch oder thomas.knecht@statistik.ji.zh.ch
 
 ### 2. Tipps & Tricks für den Umgang mit Jsons / Listen in R ###
 
