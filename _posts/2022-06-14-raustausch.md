@@ -3,7 +3,7 @@ layout: post
 title: "R Austausch vom 14.06.2022 (Mittagsveranstaltung)"
 ---
 
-__Zeit___ 
+__Zeit__
 
 Dienstag, 14. Juni 2022 von 11.15 bis 13:30 Uhr 
 
