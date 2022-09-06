@@ -14,9 +14,11 @@ Zehnderweg 9
 Weinbergstrasse 36
 8006 Zürich
 
-### 1. Input-Referat zum Thema Strategische Initative Daten & Daten Community
+### 1. Input-Referat zur R Community - Gegenwart & Zukunft
 
-__Matthias Mazenauer, Stv. Amtsleiter Statistisches Amt__
+Andrea Schnell & Thomas Lo Russo
+
+[slides](https://docs.google.com/presentation/d/1protJ6wrc8bf6UEY8WzxEMJZipmo6Rd-YUBua5z9as8/edit#slide=id.gbb9f5d2ee2_0_236)
 
 ### 2. Austausch in Gruppen ###
 
