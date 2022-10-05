@@ -13,4 +13,16 @@ Virtuell : Infos folgen.
 
 Vor Ort : Infos folgen.
 
-Programm : Infos folgen.
+__Programm__
+
+### 1. Übersicht Shiny Use-Cases im Amt
+
+__Thomas Lo Russo, Datashop__
+
+
+### 2. Präsentation Shiny-App Online Reporting von Kund*innen
+
+__Fabienne Haas, Befragungen & Sozialhilfestatistik__
+
+
+### 3. Interaktiver Austausch
