@@ -9,9 +9,9 @@ Dienstag, 15. November 2022 von 13:30 bis 14:15 Uhr
 
 __Ort__ 
 
-Virtuell : Infos folgen.
+Virtuell: [Webex](https://afi-zh.webex.com/join/thomas.lorusso)
 
-Vor Ort : Infos folgen.
+Vor Ort: Infos folgen.
 
 __Programm__
 
