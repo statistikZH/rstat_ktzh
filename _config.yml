@@ -8,3 +8,5 @@ social_links:
 
 minima:
   date_format: "%d %-m, %Y"
+  
+future: true
