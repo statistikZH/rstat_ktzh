@@ -11,7 +11,7 @@ __Ort__
 
 Virtuell: [Webex](https://afi-zh.webex.com/join/thomas.lorusso)
 
-Vor Ort: Infos folgen.
+Vor Ort: Raum 409 im Statistischen Amt
 
 __Programm__
 
