@@ -19,6 +19,7 @@ __Programm__
 
 __Thomas Lo Russo, Datashop__
 
+[Slides](https://docs.google.com/presentation/d/1cCV4VqVaz3aWILN7OXoqZV9OWIBqQt6nngRN_iTDWt0/edit?usp=sharing)
 
 ### 2. Präsentation Shiny-App Online Reporting von Kund*innen
 
@@ -26,3 +27,5 @@ __Fabienne Haas, Befragungen & Sozialhilfestatistik__
 
 
 ### 3. Interaktiver Austausch
+
+
