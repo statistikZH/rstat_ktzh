@@ -26,6 +26,4 @@ __Thomas Lo Russo, Datashop__
 __Fabienne Haas, Befragungen & Sozialhilfestatistik__
 
 
-### 3. Interaktiver Austausch
-
-
+### 3. Interaktiver Austausch : bei welchen Stellen ist Shiny schon im Einsatz / Ideen für Use Cases
