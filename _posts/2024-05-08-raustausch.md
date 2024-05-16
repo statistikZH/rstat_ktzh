@@ -19,12 +19,16 @@ __Programm__
 
 __Loris Kaufmann, Team Data__
 
+[Slides](https://github.com/statistikZH/rstats_ktzh/blob/master/slides_20240508/Validate.pdf)
 
 ### 2. Bye-bye Markdown – hello Quarto!
 
 __Res Marti, Bildungsdirektion__
 
+[Slides](https://github.com/statistikZH/rstats_ktzh/blob/master/slides_20240508/quarto_intro.html)
 
 ### 3. R goes DAP
+
+[Slides](https://github.com/statistikZH/rstats_ktzh/blob/master/slides_20240508/R_Austausch_08_05.pdf)
 
 __Thomas Lo Russo & Philipp Bosch, Team Data__
