@@ -25,8 +25,8 @@ __Loris Kaufmann, Team Data__
 
 __Res Marti, Bildungsdirektion__
 
-[Slides](https://github.com/statistikZH/rstats_ktzh/blob/master/slides_20240508/quarto_intro.html)
-
+[Slides](https://github.com/statistikZH/rstats_ktzh/blob/19bb323dee700135b502b2bb605f13a6f407c50b/slides_20240508/quarto_intro.html)
+Raw downloaden und im Browser öffnen!
 ### 3. R goes DAP
 
 [Slides](https://github.com/statistikZH/rstats_ktzh/blob/master/slides_20240508/R_Austausch_08_05.pdf)
