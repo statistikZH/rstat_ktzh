@@ -20,8 +20,6 @@ Einblick in die Arbeitsweise der Abteilung Forschung & Entwicklung des JuWe, u.a
 
 [Folien](https://github.com/statistikZH/rstats_ktzh/blob/a3ec4dd59fe546463a3e106e3398763814f88422/slides_20250113/R_Austausch_R_at_JuWe.pdf)
 
-https://github.com/statistikZH/rstats_ktzh/blob/a3ec4dd59fe546463a3e106e3398763814f88422/slides_20250113/R_Austausch_R_at_JuWe.pdf
-
 ### 2. Shiny Apps in der städtischen Verwaltung
 Entwicklung, Umsetzung, Chancen und Herausforderungen
 
